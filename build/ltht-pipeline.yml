@@ -14,10 +14,7 @@ pool:
 variables:
     - template: ltht-variables.yml
 
-steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
-
+jobs:  
 - template: docker-build-push.yml
   parameters:
     version: "Stu3"
