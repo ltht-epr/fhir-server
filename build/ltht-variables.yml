@@ -3,6 +3,6 @@
 
 variables:
   buildConfiguration: 'Release' 
-  azureSubscriptionEndpoint: 'LTHT PPM Container Registry'
+  azureSubscriptionEndpoint: 'LTHT PPM POC'
   azureContainerRegistry: 'lthtuksppmconfigcentreconreg.azurecr.io'
   composeLocation: 'build/docker/docker-compose.yaml'
