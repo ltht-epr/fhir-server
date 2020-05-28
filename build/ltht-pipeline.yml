@@ -3,19 +3,19 @@
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-name: $(SourceBranchName)-$(Date:yyyyMMdd)$(Rev:-r)
-
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 variables:
-    - template: ltht-variables.yml
+  - template: ltht-variables.yml
 
-jobs:  
-- template: docker-build-push.yml
-  parameters:
-    version: "Stu3"
-    tag: $(build.sourceBranchName) 
+name: $(versionMajor).$(versionMinor)$(Rev:.r)
+
+jobs:
+  - template: docker-build-push.yml
+    parameters:
+      version: "Stu3"
+      tag: $(Build.BuildNumber)

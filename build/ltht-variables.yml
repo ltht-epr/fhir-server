@@ -2,6 +2,8 @@
 # Variables used during builds.
 
 variables:
+  versionMajor: "0"
+  versionMinor: "1"
   buildConfiguration: "Release"
   azureSubscriptionEndpoint: "LTHT FHIR (Non-Production)"
   azureContainerRegistry: "lthtuksfhirnonprodconreg.azurecr.io"
