@@ -1,8 +1,8 @@
-# DESCRIPTION: 
+# DESCRIPTION:
 # Variables used during builds.
 
 variables:
-  buildConfiguration: 'Release' 
-  azureSubscriptionEndpoint: 'LTHT PPM POC'
-  azureContainerRegistry: 'lthtuksppmconfigcentreconreg.azurecr.io'
-  composeLocation: 'build/docker/docker-compose.yaml'
+  buildConfiguration: "Release"
+  azureSubscriptionEndpoint: "LTHT FHIR (Non-Production)"
+  azureContainerRegistry: "lthtuksfhirnonprodconreg.azurecr.io"
+  composeLocation: "build/docker/docker-compose.yaml"
